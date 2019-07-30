@@ -1,1 +1,28 @@
 @import "scss/landing";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (max-width: 1023px){
+    .sign-upANDprofile{
+        display: none;
+    }
+    
+        nav .menu{
+            display: none;
+        }
+    .burger{
+        display: flex;
+    }
+    nav .logo{
+        width: 100px;
+        height: 40px;
+        top: 50%;
+    }
+    
+}
