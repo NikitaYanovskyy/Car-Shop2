@@ -1,7 +1,4 @@
-@mixin maxWidth{
-    max-width: 1170px;
-    margin: 0 auto;
-}
+
 // Burger Menu 
 .burger{
     cursor: pointer;
@@ -150,7 +147,7 @@ nav{
         padding: 7px;
         margin: 0 10px;
         color: #fff;
-        transition: all 0.3s ease-in-out;
+        @include Transition;
     }
     .sign-up:hover{
         background-color: #fff;
@@ -179,7 +176,8 @@ nav{
 .landing-img{
     height: 450px;
     position: relative;
-    background-position: 50% 75%;
+    z-index: -1;
+    background-position: 50% 85%;
     background-image: url("images/landingCar.jpg");
     background-size: cover;
 }

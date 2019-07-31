@@ -1,0 +1,146 @@
+
+.filter{
+    @include maxWidth;
+    height: 210px;
+    margin-top: -100px !important;
+    background-color: lightcoral;
+    border-radius: 5px;
+    display: flex;
+}
+.advanced-search-mobile{
+    display: none;
+}
+// Flex-1
+
+select{
+    font-size: 16px;
+    appearance: none;
+}
+.search-options1{
+    display: grid;
+    line-height: 1.5;
+    grid-template-columns: repeat(9 , 1fr);
+    grid-template-rows: 1fr 1fr;
+    margin: 0 20px;
+}
+.search-border{
+    position: relative;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+.option-1{
+    grid-column: 1/4;
+}
+.option-2{
+    grid-column: 4/7;
+}
+
+// Getting rid of unnecessary options
+.option-2 .options:nth-child(1){
+    display: none;
+}
+
+.option-3{
+    grid-column: 7/10;
+}
+.option-4{
+    grid-column: 1/4;
+}
+.option-5{
+    grid-column: 4/6;
+}
+.option-6{
+    grid-column: 6/7;
+    input{
+    font-size: 16px;
+    outline: none;
+    }
+}
+.option-7{
+    grid-column: 7/10;
+    padding: 0 !important;
+    .search-btn{
+        cursor: pointer;
+        font-weight: bold;
+        color: #000;
+        border: none;
+        width: 100%;
+        height: 100%;
+        background-color: lightblue;
+        @include Transition;
+    }
+    .search-btn:hover{
+        background-color: $BlueHover;
+    }
+}
+.Search-nav{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+.search-by{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.search-by-btn{
+    cursor: pointer;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 7px 12px;
+}
+.search-by-btn:nth-child(1){
+    background-color: #fff;
+    color: #000;
+}
+.search-by-btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+.advanced-search{
+    margin-left: auto;
+    margin-top: auto;
+    a{
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration: underline;
+    }
+}
+
+// Flex-2
+
+.questions{
+    border-left: 1px dotted lightblue;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    a{
+        padding: 10px 40px;
+        margin-top: 10px;
+        background-color: lightblue;
+        color: #000;
+        text-decoration: none;
+        border-radius: 15px;
+        @include Transition;
+    }
+    a:hover{
+        background-color: $BlueHover;
+    }
+    p{
+        margin: 0 30px;
+    }
+    h1{
+        margin: 0 20px;
+        font-size: 30px;
+    }
+
+}
