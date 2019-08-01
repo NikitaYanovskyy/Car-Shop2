@@ -86,13 +86,29 @@
         <div class="filter">
 
             <div class="Search-nav">
+
+                
                 <div class="search-by">
-                    <p class="search-by-btn">Search by Make</p>
-                    <p class="search-by-btn">Search by Body Style</p>
+
+
+                    <div class="search-wrapper">
+                    <p class="search-by-btn search-btn1">Search by Make</p>
+                    <div class="svg-wrapper">
+                            <img class="arrow1" src="icons/arrowDown.png">
+                    </div>
+                    </div>
+
+
+                    <div class="search-wrapper">
+                        <p class="search-by-btn search-btn2">Search by Body Style</p>
+                        <div class="svg-wrapper">
+                                <img class="arrow2" src="icons/arrowDown.png" style="display: none">
+                        </div>
+                    </div>
                     <p class="advanced-search"><a href="#">Advanced Search</a></p>
                 </div>
 
-                <form class="search-options1">
+                <form class="search-options1 form1">
                         
                     <select  class="option-1 search-border">
                         <option class="options">New & Used Cars</option>   
@@ -138,11 +154,52 @@
 
                     <div class="option-7 search-border">
                         <button type="submit" class="search-btn">Search</button>
-                    </div>
-                </div>
-                <div class="advanced-search-mobile"></div>
-                <div class="advanced-search-mobile"><a href="#">Advanced Search</a></div>
+                    </div>                
             </form>
+
+
+            <form class="search-options1 form2">
+                        
+                <select  class="option-1 search-border">
+                    <option class="options">All Body Styles</option>   
+                    <option class="options">Used Cars</option>  
+                    <option class="options">New Cars</option>
+                    <option class="options">Licensed Cars</option>  
+                </select>
+
+                <select class="option-2 search-border">
+                        <option class="options">New & Used Cars</option>  
+                        <option class="options">Used Cars</option>  
+                        <option class="options">New Cars</option>
+                        <option class="options">Licensed Cars</option>  
+                    </select>
+
+                <select class="option-3 search-border">
+                        <option selected="selected" class="options">No Max Price</option>  
+                        <option class="options">1500</option>  
+                        <option class="options">Classic</option>
+                        <option class="options">2500</option> 
+                        <option class="options">Cargo</option> 
+                </select>
+                
+                <select class="option-4 search-border">
+                        <optionselected="selected"  class="options">20 Miles from</option>  
+                        <option class="options">1500</option>  
+                        <option class="options">Classic</option>
+                        <option class="options">2500</option> 
+                        <option class="options">Cargo</option>  
+                </select>
+
+                <div class="option-6-additional search-border">
+                    <input type="text" placeholder="ZIP" value="88015" style="border: none">
+               </div>
+
+                <div class="option-7 search-border">
+                    <button type="submit" class="search-btn">Search</button>
+                </div>
+        </form>
+        <div class="advanced-search-mobile"><a href="#">Advanced Search</a></div>
+        </div>
 
             <div class="questions">
                 <h1>Find your true love</h1>

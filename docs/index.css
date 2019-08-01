@@ -67,7 +67,7 @@
           flex-direction: column;
   padding: 10px 30px 30px 30px;
   width: 250px;
-  position: absolute;
+  position: fixed;
   right: 0;
   z-index: 1;
   height: 100%;
@@ -278,8 +278,8 @@ select {
   line-height: 1.5;
   -ms-grid-columns: (1fr)[9];
       grid-template-columns: repeat(9, 1fr);
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: 50px 50px;
+      grid-template-rows: 50px 50px;
   margin: 0 20px;
 }
 
@@ -336,6 +336,17 @@ select {
   outline: none;
 }
 
+.option-6-additional {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 3;
+  grid-column: 4/7;
+}
+
+.option-6-additional input {
+  font-size: 16px;
+  outline: none;
+}
+
 .option-7 {
   -ms-grid-column: 7;
   -ms-grid-column-span: 3;
@@ -383,6 +394,29 @@ select {
           flex-direction: row;
 }
 
+.search-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.search-wrapper .svg-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-wrapper .svg-wrapper img {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -40%);
+          transform: translate(-50%, -40%);
+}
+
 .search-by-btn {
   cursor: pointer;
   color: #fff;
@@ -390,9 +424,14 @@ select {
   padding: 7px 12px;
 }
 
-.search-by-btn:nth-child(1) {
+.search-btn1 {
   background-color: #fff;
   color: #000;
+}
+
+.search-btn2 {
+  background-color: lightcoral;
+  color: #fff;
 }
 
 .search-by-btn:hover {
@@ -470,14 +509,19 @@ select {
 }
 
 @media screen and (max-width: 425px) {
+  .search-wrapper {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
   .search-options {
     -ms-grid-rows: 6fr !important;
         grid-template-rows: 6fr !important;
   }
   .search-border {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 9;
-    grid-column: 1/10;
+    -ms-grid-column: 1 !important;
+    -ms-grid-column-span: 9 !important;
+    grid-column: 1/10 !important;
   }
   .option-7 {
     background-color: lightblue;

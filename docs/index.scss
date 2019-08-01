@@ -20,11 +20,14 @@ $BlueHover: rgb(118, 197, 223);
 @media screen and (max-width: 425px){
 
        // Filder
+    .search-wrapper{
+        flex:1;
+    }
     .search-options{
         grid-template-rows: 6fr !important;
     }
     .search-border{
-        grid-column: 1/10;
+        grid-column: 1/10 !important;
     }
     .option-7{
         background-color: lightblue;
