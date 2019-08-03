@@ -686,6 +686,8 @@ select {
 }
 
 .info-card {
+  -webkit-box-shadow: 0 16px 20px #0007;
+          box-shadow: 0 16px 20px #0007;
   position: relative;
   display: inline-block;
   padding-left: 15px;
@@ -812,7 +814,7 @@ select {
   }
   .info-card {
     width: 300px;
-    padding-right: 300px;
+    padding-right: 330px;
   }
 }
 
