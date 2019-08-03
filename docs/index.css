@@ -111,7 +111,6 @@
 }
 
 .landing {
-  height: 100vh;
   position: relative;
 }
 
@@ -543,6 +542,68 @@ select {
   font-size: 30px;
 }
 
+.small-advertisment {
+  max-width: 1170px !important;
+  margin: 0 auto !important;
+}
+
+.advertisment-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 70%;
+  margin: 20px auto;
+  border: 1px solid #000;
+  cursor: pointer;
+  background-color: lightblue;
+}
+
+.A-left-part {
+  padding: 20px;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  background-image: url("images/carousel1.jpg");
+  background-position: 30% , 50%;
+  color: #000;
+}
+
+.A-left-part a {
+  display: inline-block;
+  background-color: lightblue;
+  padding: 5px 10px;
+  margin: 10px 0;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  text-decoration: none;
+  border-radius: 5px;
+  color: #000;
+}
+
+.A-left-part p:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.A-left-part p:nth-of-type(2) {
+  font-size: 17px;
+}
+
+.A-right-part {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.A-right-part img {
+  margin-left: 20px;
+  width: 155px;
+  height: 65px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -594,7 +655,7 @@ select {
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1024px) {
   .landing-small-box-wrapper {
     margin-top: 180px !important;
     margin-right: 20px !important;
@@ -627,6 +688,7 @@ select {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    border-radius: 0;
   }
   .questions {
     border-left: none;

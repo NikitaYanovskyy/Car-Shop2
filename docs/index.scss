@@ -8,6 +8,7 @@
 $BlueHover: rgb(118, 197, 223);
 @import "scss/landing";
 @import "scss/filter";
+@import "scss/underFilter";
 
 
 *{
@@ -54,7 +55,7 @@ $BlueHover: rgb(118, 197, 223);
     }  
 }
 
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1024px){
 
     // Small box & Landing text
     .landing-small-box-wrapper{
@@ -87,6 +88,7 @@ $BlueHover: rgb(118, 197, 223);
         margin: 0 !important;
         height: fit-content;
         flex-direction: column;
+        border-radius: 0;
     }
     .questions{
         border-left: none;

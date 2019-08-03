@@ -54,6 +54,7 @@ ulArray.forEach((e , i) =>{
     })
 })
 
+// Switchers
 searchBTNFirst.addEventListener(`click` , ()=>{
     form2.style.display = `none`;
     form1.style.display = `grid`;
@@ -83,4 +84,14 @@ searchBTNSecond.addEventListener(`click` , ()=>{
 })
 })
 
+//Advertisement
 
+const advertisementWrapper = document.querySelector(`.advertisment-wrapper`);
+const advertismentButton = document.querySelector(`.advertisment-wrapper a`);
+
+advertisementWrapper.addEventListener(`mouseover` , ()=>{
+    advertismentButton.style.transform = `scale(1)`;
+})
+advertisementWrapper.addEventListener(`mouseout` , ()=>{
+    advertismentButton.style.transform = `scale(0.9)`;
+})
