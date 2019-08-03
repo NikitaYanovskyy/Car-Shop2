@@ -9,7 +9,7 @@ $BlueHover: rgb(118, 197, 223);
 @import "scss/landing";
 @import "scss/filter";
 @import "scss/underFilter";
-@import "scss/trending";
+@import "scss/trendingANDcards";
 
 
 *{
@@ -18,7 +18,6 @@ $BlueHover: rgb(118, 197, 223);
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
 
 @media screen and (max-width: 425px){
 
@@ -134,7 +133,7 @@ $BlueHover: rgb(118, 197, 223);
         margin-top: 40px;
     }
     .questions a{
-        margin: 10px 0;
+        margin: 20px 0;
     }
 
     //Frame

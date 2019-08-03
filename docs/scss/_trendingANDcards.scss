@@ -1,0 +1,96 @@
+.trending-near-you{
+    @include maxWidth;
+    margin-top: 10px !important;
+    h1{
+        font-size: 28px;
+        color: lightcoral;
+        text-align: center;
+    }
+    .trending-carousel{
+        position: relative;
+        height: 150px;
+        margin: 40px 0;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        .trending-element{
+            display: inline-block;
+            position: relative;
+            height: 100%;
+            width: 220px;
+            background: linear-gradient(#0009 , transparent);
+            margin-right: 10px !important;
+            cursor: pointer;
+            p{
+                width: 100%;
+                font-size: 17px;
+                padding: 5px 0 0 10px;
+                color: #fff;
+            }
+            img{
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }   
+    }
+    .trending-carousel::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
+//Info Cards
+.info-cards-wrapper{
+    background-color: lightgray;
+    height: 150px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.info-cards-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.info-cards{
+    @include maxWidth;
+    width: 1170px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info-card{
+position: relative;
+display: inline-block;
+padding-left: 15px;
+padding-top: 10px;
+cursor: pointer;
+width: 370px;
+margin-right: 20px !important;
+height: 60%;
+background-color: #fff;
+
+
+img{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    fill: lightcoral;
+}
+.info-img{
+    display: inline-block;
+    height: 50%;
+    width: fit-content;
+}
+.info-text{
+    position: absolute;
+    top: 20%;
+    color: rgb(43, 17, 17);
+    display: inline-block;
+    flex-direction: column;
+    height: 50%;
+}
+}
