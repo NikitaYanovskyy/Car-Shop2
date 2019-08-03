@@ -9,6 +9,7 @@ $BlueHover: rgb(118, 197, 223);
 @import "scss/landing";
 @import "scss/filter";
 @import "scss/underFilter";
+@import "scss/trending";
 
 
 *{
@@ -17,6 +18,7 @@ $BlueHover: rgb(118, 197, 223);
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
 
 @media screen and (max-width: 425px){
 
@@ -53,6 +55,41 @@ $BlueHover: rgb(118, 197, 223);
         text-decoration: none;
     }
     }  
+
+    // Frame 
+    .advertisment-wrapper{
+        width: 80%;
+    }
+    .A-left-part{
+        padding: 10px;
+        flex: 3;
+        a{
+            display: inline-block;
+            background-color: lightblue;
+            padding: 3px 7px;
+            font-size: 14px;
+            margin: 10px 0 0 0;
+            transform: scale(0.9);
+            text-decoration: none;
+            border-radius: 5px;
+            color: #000;
+        }
+    }
+    .A-left-part p:nth-of-type(1){
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .A-left-part p:nth-of-type(2){
+        font-size: 10px;
+    }
+    .A-right-part{
+        flex: 1;
+        img{
+            width: 80px;
+            height: 35px;
+        }
+    }
+        
 }
 
 @media screen and (max-width: 1024px){
@@ -98,5 +135,12 @@ $BlueHover: rgb(118, 197, 223);
     }
     .questions a{
         margin: 10px 0;
+    }
+
+    //Frame
+    .A-right-part{
+        img{
+            margin: 0 10px;
+        }
     }
 }

@@ -477,8 +477,8 @@ select {
 }
 
 .search-by-btn:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #fff !important;
+  color: #000 !important;
 }
 
 .advanced-search {
@@ -599,9 +599,58 @@ select {
 }
 
 .A-right-part img {
-  margin-left: 20px;
+  display: block;
+  margin: 0 auto;
   width: 155px;
   height: 65px;
+}
+
+.trending-near-you {
+  max-width: 1170px !important;
+  margin: 0 auto !important;
+  margin-top: 10px !important;
+}
+
+.trending-near-you h1 {
+  font-size: 28px;
+  color: lightcoral;
+  text-align: center;
+}
+
+.trending-near-you .trending-carousel {
+  width: 1170px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 150px;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.trending-near-you .trending-carousel .trending-element {
+  position: relative;
+  height: 100%;
+  width: 220px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#0009), to(transparent));
+  background: linear-gradient(#0009, transparent);
+  margin: 0 auto;
+}
+
+.trending-near-you .trending-carousel .trending-element p {
+  width: 100%;
+  font-size: 17px;
+  padding: 5px 0 0 10px;
+  color: #fff;
+}
+
+.trending-near-you .trending-carousel .trending-element img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 * {
@@ -653,6 +702,43 @@ select {
     cursor: pointer;
     text-decoration: none;
   }
+  .advertisment-wrapper {
+    width: 80%;
+  }
+  .A-left-part {
+    padding: 10px;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  .A-left-part a {
+    display: inline-block;
+    background-color: lightblue;
+    padding: 3px 7px;
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    text-decoration: none;
+    border-radius: 5px;
+    color: #000;
+  }
+  .A-left-part p:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .A-left-part p:nth-of-type(2) {
+    font-size: 10px;
+  }
+  .A-right-part {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .A-right-part img {
+    width: 80px;
+    height: 35px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -698,6 +784,9 @@ select {
   }
   .questions a {
     margin: 10px 0;
+  }
+  .A-right-part img {
+    margin: 0 10px;
   }
 }
 /*# sourceMappingURL=index.css.map */
