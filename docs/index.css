@@ -810,6 +810,10 @@ select {
     width: 80px;
     height: 35px;
   }
+  .info-card {
+    width: 300px;
+    padding-right: 300px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
