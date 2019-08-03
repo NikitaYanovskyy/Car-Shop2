@@ -229,7 +229,7 @@ nav .menu-item:hover li {
 .landing-img {
   height: 450px;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   background-position: 50% 85%;
   background-image: url("images/landingCar.jpg");
   background-size: cover;
@@ -249,9 +249,50 @@ nav .menu-item:hover li {
   padding-top: 30px;
 }
 
+.landing-small-box-wrapper {
+  max-width: 1170px !important;
+  margin: 0 auto !important;
+  margin-top: 80px !important;
+}
+
+.landing-small-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: right;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  margin-left: auto;
+  background-color: #0009;
+  width: 180px;
+  font-size: 14px;
+  height: 80px;
+}
+
+.landing-small-box p {
+  width: 100%;
+  padding-right: 10px;
+  margin: 2px 0;
+}
+
+.landing-small-box a {
+  color: #fff;
+  cursor: pointer;
+}
+
 .filter {
   max-width: 1170px !important;
   margin: 0 auto !important;
+  position: relative;
+  z-index: 2;
   height: 210px;
   margin-top: -100px !important;
   background-color: lightcoral;
@@ -552,6 +593,13 @@ select {
 }
 
 @media screen and (max-width: 1023px) {
+  .landing-small-box-wrapper {
+    margin-top: 180px !important;
+    margin-right: 20px !important;
+  }
+  .landing-img-wrapper h1 {
+    margin-left: 20px;
+  }
   .sign-upANDprofile {
     display: none;
   }

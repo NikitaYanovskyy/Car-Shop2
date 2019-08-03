@@ -2,6 +2,8 @@
 
 .filter{
     @include maxWidth;
+    position: relative;
+    z-index: 2;
     height: 210px;
     margin-top: -100px !important;
     background-color: lightcoral;

@@ -176,7 +176,7 @@ nav{
 .landing-img{
     height: 450px;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     background-position: 50% 85%;
     background-image: url("images/landingCar.jpg");
     background-size: cover;
@@ -189,5 +189,32 @@ nav{
         -webkit-background-clip: text;
         font-size: 60px;
         padding-top: 30px;
+    }
+}
+
+// Small Box
+.landing-small-box-wrapper{
+    @include maxWidth;
+    margin-top: 80px !important;
+}
+.landing-small-box{
+    display: flex;
+    text-align: right;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-left: auto;
+    background-color: #0009;
+    width: 180px;
+    font-size: 14px;
+    height: 80px;
+    p{
+        width: 100%;
+        padding-right: 10px;
+        margin: 2px 0;
+    }
+    a{
+        color: #fff;
+        cursor: pointer;
     }
 }

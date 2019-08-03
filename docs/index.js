@@ -3,9 +3,9 @@ document.addEventListener(`DOMContentLoaded` , ()=>{
 
 
 // LOL Laughing
-document.addEventListener(`click` , ()=>{
-    location.href = 'https://www.google.com/search?q=jojo+5&hl=ru&tbm=isch&source=iu&ictx=1&fir=PCG5rNeaRj4VKM%253A%252ChUp56w2VNSLFFM%252C%252Fm%252F02pl2j4&vet=1&usg=AI4_-kRMXA7VJQa1m8DHneMuM-w3nMTnhw&sa=X&ved=2ahUKEwja3p-ah-TjAhVqoosKHaIOBhEQ_h0wE3oECAkQCQ#imgrc=PCG5rNeaRj4VKM:';
-})
+//document.addEventListener(`click` , ()=>{
+//   location.href = 'https://www.google.com/search?q=jojo+5&hl=ru&tbm=isch&source=iu&ictx=1&fir=PCG5rNeaRj4VKM%253A%252ChUp56w2VNSLFFM%252C%252Fm%252F02pl2j4&vet=1&usg=AI4_-kRMXA7VJQa1m8DHneMuM-w3nMTnhw&sa=X&ved=2ahUKEwja3p-ah-TjAhVqoosKHaIOBhEQ_h0wE3oECAkQCQ#imgrc=PCG5rNeaRj4VKM:';
+//})
 
 
 const 
