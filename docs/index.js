@@ -1,6 +1,6 @@
 document.addEventListener(`DOMContentLoaded` , ()=>{
 // Mobile menu
-
+//alert(`Сайт поки що у розробці`);
 
 // LOL Laughing
 //document.addEventListener(`click` , ()=>{

@@ -663,6 +663,7 @@ select {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+  margin: 30px 0;
 }
 
 .info-cards-wrapper::-webkit-scrollbar {
@@ -686,8 +687,6 @@ select {
 }
 
 .info-card {
-  -webkit-box-shadow: 0 16px 20px #0007;
-          box-shadow: 0 16px 20px #0007;
   position: relative;
   display: inline-block;
   padding-left: 15px;
@@ -724,6 +723,93 @@ select {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 50%;
+}
+
+.SUVs-grid-wrapper {
+  background-color: lightgray;
+}
+
+.SUVs-grid {
+  max-width: 1170px !important;
+  margin: 0 auto !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.png-side {
+  position: relative;
+  width: 30%;
+  text-align: center;
+}
+
+.png-side img:nth-child(2) {
+  position: absolute;
+  right: 30px;
+  height: 500px;
+  top: 30%;
+}
+
+.png-side-wrapper {
+  padding: 0 25px;
+  width: 60%;
+  float: right;
+  margin-right: 60px;
+}
+
+.grid-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 70%;
+}
+
+.grid-side .grid-side-wrapper {
+  margin: 30px 0 10px 0;
+}
+
+.grid-side .grid-side-wrapper h1 {
+  margin: 10px 0;
+}
+
+.grid-side .SUVs-inline {
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.grid-side .SUVs-inline .SUVs-element {
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 2%;
+  width: 23%;
+  height: 100%;
+}
+
+.grid-side .SUVs-inline .SUVs-element img {
+  width: 100%;
+  height: 80%;
+}
+
+.grid-side .SUVs-inline .SUVs-element p {
+  margin: 5px 0;
+}
+
+.grid-side .SUVs-inline .SUVs-element:last-child {
+  margin-right: 0;
+}
+
+.grid-side .SUVs-inline::-webkit-scrollbar {
+  display: none;
 }
 
 * {
@@ -812,15 +898,72 @@ select {
     width: 80px;
     height: 35px;
   }
+  .info-card {
+    width: 360px;
+    padding-right: 330px;
+  }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
+  .SUVs-grid {
+    max-width: 1170px !important;
+    margin: 0 auto !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .png-side {
+    position: relative;
+    width: 100%;
+    text-align: left;
+  }
+  .png-side img:nth-child(2) {
+    display: none;
+  }
+  .png-side .png-side-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 25px;
+    width: 100%;
+    float: left;
+    margin-right: 0;
+  }
+  .png-side .png-side-wrapper img {
+    width: 100px;
+    height: 100px;
+  }
+  .grid-side {
+    width: 100%;
+  }
+  .grid-side .grid-side-wrapper {
+    margin: 30px 0 10px 20px;
+  }
+  .grid-side .SUVs-inline .SUVs-element {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 900px) and (max-width: 1024px) {
+  .trending-carousel {
+    margin-left: 20px !important;
+  }
+  .info-cards-wrapper {
+    padding-left: 20px !important;
+  }
   .landing-small-box-wrapper {
     margin-top: 180px !important;
     margin-right: 20px !important;
   }
   .landing-img-wrapper h1 {
     margin-left: 20px;
+  }
+  .info-cards-wrapper::-webkit-scrollbar {
+    display: inline !important;
   }
   .sign-upANDprofile {
     display: none;

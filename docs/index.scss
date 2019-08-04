@@ -10,6 +10,7 @@ $BlueHover: rgb(118, 197, 223);
 @import "scss/filter";
 @import "scss/underFilter";
 @import "scss/trendingANDcards";
+@import "scss/_SUVs-grid";
 
 
 *{
@@ -90,10 +91,63 @@ $BlueHover: rgb(118, 197, 223);
     }
         // About cards
 
-        
+        .info-card{
+            width: 360px;
+            padding-right: 330px;
+        }
 }
+@media screen and (max-width: 900px){
 
+    // PNG side
+    .SUVs-grid{
+        @include maxWidth;
+        flex-direction: column;
+    }
+    .png-side{
+        position: relative;
+        width: 100%;
+        text-align: left;
+        img:nth-child(2){
+            display: none;
+        }
+        
+        .png-side-wrapper{
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+            width: 100%;
+            float: left;
+            margin-right: 0;
+            img{
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+
+    // Grid side
+    .grid-side{
+        .grid-side-wrapper{
+            margin: 30px 0 10px 20px;
+        }
+        width: 100%;
+        .SUVs-inline{
+            .SUVs-element{
+                width: 300px;
+        }
+    }
+    
+}
 @media screen and (max-width: 1024px){
+
+    // Tranding Carousel & App
+    .trending-carousel{
+        margin-left: 20px !important;
+    }
+    .info-cards-wrapper{
+        padding-left: 20px !important;
+    }
+
 
     // Small box & Landing text
     .landing-small-box-wrapper{
@@ -103,7 +157,9 @@ $BlueHover: rgb(118, 197, 223);
     .landing-img-wrapper h1{
         margin-left: 20px;
     }
-
+    .info-cards-wrapper::-webkit-scrollbar {
+        display: inline !important;
+    }
 
     // Landing
     .sign-upANDprofile{
@@ -144,4 +200,7 @@ $BlueHover: rgb(118, 197, 223);
             margin: 0 10px;
         }
     }
+
+}
+    
 }
