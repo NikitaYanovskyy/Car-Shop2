@@ -11,7 +11,8 @@ $BlueHover: rgb(118, 197, 223);
 @import "scss/underFilter";
 @import "scss/trendingANDcards";
 @import "scss/_SUVs-grid";
-
+@import "scss/grid-cars";
+@import "scss/with-make";
 
 *{
     margin: 0;
@@ -95,6 +96,41 @@ $BlueHover: rgb(118, 197, 223);
             width: 360px;
             padding-right: 330px;
         }
+
+
+
+
+    // Cars Grid
+    .cars-grid{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+    }
+    .cars-grid-element-one{
+        grid-column: 1/2;
+    }
+    .cars-grid-element-two{
+        grid-column: 2/3;
+    }
+    .cars-grid-element-three{
+        grid-column: 1/2;
+    }
+    .cars-grid-element-four{
+        grid-column: 2/3;
+    }
+    .cars-element{
+        margin: 10px auto !important;
+    }
+
+    // With Make
+
+    .start-with-make{
+        .with-make-uls{
+            display: flex;
+            width: 85%;
+            margin: 0 auto;
+        }
+    }
+    
 }
 @media screen and (max-width: 900px){
 
@@ -121,14 +157,14 @@ $BlueHover: rgb(118, 197, 223);
             img{
                 width: 100px;
                 height: 100px;
+                margin-left: -15px;
             }
         }
     }
-
     // Grid side
     .grid-side{
         .grid-side-wrapper{
-            margin: 30px 0 10px 20px;
+            margin: 10px 20px !important;
         }
         width: 100%;
         .SUVs-inline{
@@ -141,8 +177,8 @@ $BlueHover: rgb(118, 197, 223);
 @media screen and (max-width: 1024px){
 
     // Tranding Carousel & App
-    .trending-carousel{
-        margin-left: 20px !important;
+    .trending-near-you{
+        margin: 0 20px !important;
     }
     .info-cards-wrapper{
         padding-left: 20px !important;
