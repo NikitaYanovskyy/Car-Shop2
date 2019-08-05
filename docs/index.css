@@ -838,7 +838,14 @@ select {
   margin: 40px 0;
 }
 
-.cars-grid-text h3 {
+.cars-grid-text h1 {
+  font-size: 30px;
+  color: #2b1111;
+}
+
+.cars-grid-text p {
+  font-size: 25px;
+  color: #2b1111;
   margin: 10px 0;
 }
 
@@ -902,6 +909,16 @@ select {
   text-align: center;
 }
 
+.start-with-make .with-make-text h1 {
+  font-size: 30px;
+  color: #2b1111;
+}
+
+.start-with-make .with-make-text p {
+  font-size: 25px;
+  color: #2b1111;
+}
+
 .start-with-make .with-make-uls {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -929,6 +946,227 @@ select {
   width: 15%;
 }
 
+.new-cars-reveals {
+  max-width: 1170px !important;
+  margin: 0 auto !important;
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
+}
+
+.new-cars-reveals .new-cars-text {
+  color: #2b1111;
+  text-align: center;
+}
+
+.new-cars-reveals .new-cars-text h1 {
+  font-size: 30px;
+}
+
+.new-cars-reveals .new-cars-text p {
+  font-size: 25px;
+}
+
+.new-cars-reveals .new-cars-flex {
+  margin: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.new-cars-reveals .new-cars-flex .new-cars-element {
+  cursor: pointer;
+  width: 48%;
+}
+
+.new-cars-reveals .new-cars-flex .new-cars-element img {
+  width: 100%;
+}
+
+.new-cars-reveals .new-cars-flex .new-cars-element p:nth-of-type(1) {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.new-cars-reveals .new-cars-flex .new-cars-element p:nth-of-type(2) {
+  margin: 5px 0;
+}
+
+.new-cars-reveals .new-cars-flex .new-cars-element p:nth-of-type(2) a {
+  text-decoration: none;
+  color: #51b6d8;
+}
+
+.new-cars-reveals .new-cars-flex .new-cars-element .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new-cars-reveals .new-cars-flex .new-cars-element .author .buy {
+  font-weight: normal;
+}
+
+.new-cars-reveals .new-cars-flex .new-cars-element .author img {
+  margin-top: 10px;
+  margin-right: 20px;
+  width: 70px;
+  height: 70px;
+  border-radius: 200px;
+}
+
+.new-cars-reveals .new-cars-flex .new-cars-element:last-child {
+  margin-left: auto;
+}
+
+.new-cars-reveals .new-cars-flex .new-cars-element:hover p:nth-of-type(2) a {
+  color: darkblue;
+}
+
+.new-cars-reveals .new-cars-flex .new-cars-element:hover p:nth-of-type(1) {
+  color: darkblue;
+}
+
+.new-cars-reveals .new-cars-flex2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.new-cars-reveals .new-cars-flex2 .new-cars-flex {
+  width: 70%;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper {
+  width: 30%;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment {
+  margin: 50px auto 0 auto;
+  height: 100%;
+  width: 80%;
+  background-color: #000;
+}
+
+.popular-searches {
+  background-color: lightgray;
+  padding-top: 50px;
+}
+
+.popular-searches .popular-searches-wrapper {
+  max-width: 1170px !important;
+  margin: 0 auto !important;
+}
+
+.popular-searches h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: #2b1111;
+}
+
+.popular-searches h3 {
+  margin-top: 20px;
+  color: #2b1111;
+}
+
+.popular-searches ul {
+  -webkit-column-count: 4;
+          column-count: 4;
+  width: 100%;
+  margin: 20px 0 20px 0;
+  line-height: 30px;
+}
+
+.popular-searches ul li {
+  list-style: none;
+}
+
+.popular-searches ul li a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+
+footer {
+  background-color: lightcoral;
+  padding-top: 30px;
+}
+
+.footer-wrapper {
+  max-width: 1170px !important;
+  margin: 0 auto !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-wrapper h4 {
+  position: relative;
+  color: #2b1111;
+  padding-bottom: 15px;
+}
+
+.footer-wrapper h4 img {
+  position: absolute;
+  right: 0;
+}
+
+.footer-wrapper .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55%;
+  margin-bottom: 50px;
+}
+
+.footer-wrapper .footer-nav ul {
+  margin: 0 auto;
+  line-height: 25px;
+}
+
+.footer-wrapper .footer-nav ul li {
+  list-style: none;
+}
+
+.footer-wrapper .footer-nav ul li a {
+  text-decoration: none;
+  color: #2b1111;
+}
+
+.footer-wrapper .footer-icons {
+  margin-left: 0 !important;
+  margin-bottom: 25px !important;
+}
+
+.footer-wrapper .footer-icons ul {
+  float: left;
+}
+
+.footer-wrapper .footer-icons ul li {
+  margin: 20px 30px 0 0 !important;
+  list-style: none;
+  float: right;
+}
+
+.footer-wrapper .footer-icons ul li a svg {
+  fill: #0009;
+}
+
+.footer-wrapper .footer-icons ul li a svg path {
+  fill: #0009;
+}
+
+.footer-wrapper .footer-icons ul li a:hover svg {
+  fill: #000;
+}
+
+.footer-wrapper .footer-icons ul li a:hover svg path {
+  fill: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -937,7 +1175,108 @@ select {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.hidden {
+  display: none !important;
+}
+
 @media screen and (max-width: 425px) {
+  .footer-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 20px !important;
+  }
+  .footer-wrapper h4 {
+    border-bottom: 1px solid #2b1111;
+    padding: 15px 0;
+  }
+  .footer-wrapper .footer-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100% !important;
+    margin-bottom: 0 !important;
+  }
+  .footer-wrapper .footer-nav ul {
+    width: 100%;
+  }
+  .footer-wrapper .footer-nav ul li {
+    list-style: none;
+  }
+  .footer-wrapper .footer-nav ul li a {
+    text-decoration: none;
+    color: #2b1111;
+  }
+  .footer-wrapper .footer-icons {
+    margin-left: 80px;
+  }
+  .footer-wrapper .footer-icons ul {
+    float: left;
+  }
+  .footer-wrapper .footer-icons ul li {
+    margin: 20px 15px 0 15px;
+    list-style: none;
+    float: right;
+  }
+  .footer-wrapper .footer-icons ul li a svg {
+    fill: #0009;
+  }
+  .footer-wrapper .footer-icons ul li a svg path {
+    fill: #0009;
+  }
+  .footer-wrapper .footer-icons ul li a:hover svg {
+    fill: #000;
+  }
+  .footer-wrapper .footer-icons ul li a:hover svg path {
+    fill: #000;
+  }
+  .popular-searches ul {
+    -webkit-column-count: 1 !important;
+            column-count: 1 !important;
+  }
+  .new-cars-flex2 .new-cars-flex {
+    margin-top: 0;
+    width: 100% !important;
+  }
+  .new-cars-reveals .new-cars-flex {
+    margin-bottom: 0;
+  }
+  .new-cars-reveals .new-cars-flex .new-cars-element {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .new-cars-reveals .new-cars-flex .new-cars-element img {
+    width: 45%;
+  }
+  .new-cars-reveals .new-cars-flex .new-cars-element p:nth-of-type(1) {
+    margin-left: 20px;
+  }
+  .new-cars-reveals .new-cars-flex .new-cars-element p:nth-of-type(2) {
+    display: none;
+  }
+  .new-cars-reveals .new-cars-flex .new-cars-element .author .buy {
+    display: none !important;
+  }
+  .new-cars-reveals .new-cars-flex .new-cars-element .author img {
+    display: none;
+  }
+  .new-cars-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .new-cars-flex .new-cars-element {
+    width: 90% !important;
+  }
   .search-wrapper {
     -webkit-box-flex: 1;
         -ms-flex: 1;
@@ -1057,6 +1396,26 @@ select {
 }
 
 @media screen and (max-width: 900px) {
+  .popular-searches h3 {
+    margin-left: 20px;
+  }
+  .popular-searches ul {
+    -webkit-column-count: 2;
+            column-count: 2;
+    width: 100%;
+    margin: 20px 0 20px 20px;
+    line-height: 30px;
+  }
+  .popular-searches ul li {
+    list-style: none;
+  }
+  .popular-searches ul li a {
+    text-decoration: none;
+    color: #5a5a5a;
+  }
+  .javascript-advertisment-wrapper {
+    display: none;
+  }
   .SUVs-grid {
     max-width: 1170px !important;
     margin: 0 auto !important;
@@ -1102,6 +1461,22 @@ select {
 }
 
 @media screen and (max-width: 900px) and (max-width: 1024px) {
+  .footer-wrapper {
+    margin-left: 20px !important;
+  }
+  .footer-wrapper .footer-nav {
+    width: 60%;
+    margin-bottom: 50px;
+  }
+  .footer-wrapper .footer-icons {
+    margin-left: 30px;
+  }
+  .new-cars-element:nth-child(1) {
+    margin: 20px !important;
+  }
+  .new-cars-element:nth-child(2) {
+    margin: 20px !important;
+  }
   .trending-near-you {
     margin: 0 20px !important;
   }

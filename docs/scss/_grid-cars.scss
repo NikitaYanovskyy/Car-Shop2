@@ -12,7 +12,13 @@
 .cars-grid-text{
     text-align: center;
     margin: 40px 0;
-    h3{
+    h1{
+        font-size: 30px;
+        color: $DarkRed;
+    }
+    p{
+        font-size: 25px;
+        color: $DarkRed;
         margin: 10px 0;
     }
 }

@@ -95,3 +95,20 @@ advertisementWrapper.addEventListener(`mouseover` , ()=>{
 advertisementWrapper.addEventListener(`mouseout` , ()=>{
     advertismentButton.style.transform = `scale(0.9)`;
 })
+
+
+//Footer
+
+const FooterButtonOne = document.querySelector(`.footer-btn1`);
+const FooterButtonTwo = document.querySelector(`.footer-btn2`);
+const FooterButtonThree = document.querySelector(`.footer-btn3`);
+
+const FooterArrOne = document.querySelectorAll(`.our-company`);
+const FooterArrTwo = document.querySelectorAll(`.buying-selling`);
+const FooterArrThree = document.querySelectorAll(`.our-partners`);
+
+FooterButtonOne.addEventListener(`click` , ()=>{
+    FooterArrOne.forEach(e=>{
+    e.classList.toggle(`hidden`);
+    })
+})
