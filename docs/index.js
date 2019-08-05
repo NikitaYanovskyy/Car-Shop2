@@ -112,3 +112,15 @@ FooterButtonOne.addEventListener(`click` , ()=>{
     e.classList.toggle(`hidden`);
     })
 })
+
+FooterButtonTwo.addEventListener(`click` , ()=>{
+    FooterArrTwo.forEach(e=>{
+    e.classList.toggle(`hidden`);
+    })
+})
+
+FooterButtonThree.addEventListener(`click` , ()=>{
+    FooterArrThree.forEach(e=>{
+    e.classList.toggle(`hidden`);
+    })
+})
