@@ -66,3 +66,32 @@ footer{
         }
     }
 }
+
+
+.under-footer{
+    background-color: rgb(167, 54, 54);
+}
+.under-footer-wrapper{
+    @include maxWidth;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    .privacy{
+        flex: 1;
+        ul{
+            float: left;
+            li{
+                list-style: none;
+                float: right;
+                margin:0 20px;
+                a{
+                    text-decoration: none;
+                    color: $DarkRed;
+                }
+                a:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
