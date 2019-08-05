@@ -759,6 +759,10 @@ select {
   margin-right: 60px;
 }
 
+.png-side-wrapper img {
+  margin-top: 40px;
+}
+
 .grid-side {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1054,6 +1058,7 @@ select {
 }
 
 .popular-searches {
+  padding-bottom: 50px;
   background-color: lightgray;
   padding-top: 50px;
 }
