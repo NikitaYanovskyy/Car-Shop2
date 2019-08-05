@@ -107,20 +107,31 @@ const FooterArrOne = document.querySelectorAll(`.our-company`);
 const FooterArrTwo = document.querySelectorAll(`.buying-selling`);
 const FooterArrThree = document.querySelectorAll(`.our-partners`);
 
-FooterButtonOne.addEventListener(`click` , ()=>{
-    FooterArrOne.forEach(e=>{
-    e.classList.toggle(`hidden`);
-    })
-})
 
-FooterButtonTwo.addEventListener(`click` , ()=>{
-    FooterArrTwo.forEach(e=>{
-    e.classList.toggle(`hidden`);
+if(window.matchMedia(`(max-width: 428px)`).matches){
+    FooterButtonOne.addEventListener(`click` , ()=>{
+        FooterButtonOne.childNodes[1].classList.toggle(`arrow-block`);
+        FooterButtonOne.childNodes[2].classList.toggle(`arrow-none`);
+        FooterArrOne.forEach(e =>{
+        e.classList.toggle(`hidden`);
+        })
     })
-})
+    
+    FooterButtonTwo.addEventListener(`click` , ()=>{
+        console.log(FooterButtonTwo.childNodes);
+        FooterButtonTwo.childNodes[1].classList.toggle(`arrow-block`);
+        FooterButtonTwo.childNodes[2].classList.toggle(`arrow-none`);
+        FooterArrTwo.forEach(e =>{
+        e.classList.toggle(`hidden`);
+        })
+    })
+    
+    FooterButtonThree.addEventListener(`click` , ()=>{
+        FooterButtonThree.childNodes[1].classList.toggle(`arrow-block`);
+        FooterButtonThree.childNodes[2].classList.toggle(`arrow-none`);
+        FooterArrThree.forEach(e =>{
+        e.classList.toggle(`hidden`);
+        })
+    })
+}
 
-FooterButtonThree.addEventListener(`click` , ()=>{
-    FooterArrThree.forEach(e=>{
-    e.classList.toggle(`hidden`);
-    })
-})

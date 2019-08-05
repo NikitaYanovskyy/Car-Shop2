@@ -1109,7 +1109,14 @@ footer {
   padding-bottom: 15px;
 }
 
-.footer-wrapper h4 img {
+.footer-wrapper h4 .arrow-down {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+
+.footer-wrapper h4 .arrow-up {
+  display: none;
   position: absolute;
   right: 0;
 }
@@ -1146,7 +1153,7 @@ footer {
 }
 
 .footer-wrapper .footer-icons ul li {
-  margin: 20px 30px 0 0 !important;
+  margin: 0 40px 0 0;
   list-style: none;
   float: right;
 }
@@ -1176,10 +1183,21 @@ footer {
 }
 
 .hidden {
+  display: block;
+}
+
+.arrow-none {
   display: none !important;
 }
 
+.arrow-block {
+  display: block !important;
+}
+
 @media screen and (max-width: 425px) {
+  .hidden {
+    display: none;
+  }
   .footer-wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1188,8 +1206,18 @@ footer {
     margin: 0 20px !important;
   }
   .footer-wrapper h4 {
+    position: relative;
     border-bottom: 1px solid #2b1111;
     padding: 15px 0;
+  }
+  .footer-wrapper h4 .arrow-down {
+    top: 15px;
+    display: block;
+  }
+  .footer-wrapper h4 .arrow-up {
+    top: 15px;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   .footer-wrapper .footer-nav {
     -webkit-box-orient: vertical;
@@ -1201,10 +1229,10 @@ footer {
   }
   .footer-wrapper .footer-nav ul {
     width: 100%;
+    margin-right: auto;
   }
   .footer-wrapper .footer-nav ul li {
-    margin-top: 10px;
-    margin-left: 20px;
+    margin: 20px 30px 0 20px !important;
     list-style: none;
   }
   .footer-wrapper .footer-nav ul li a {
@@ -1233,6 +1261,9 @@ footer {
   }
   .footer-wrapper .footer-icons ul li a:hover svg path {
     fill: #000;
+  }
+  .footer-wrapper .footer-icons ul li:nth-child(4) {
+    margin: 20px 15px 0 0;
   }
   .popular-searches ul {
     -webkit-column-count: 1 !important;

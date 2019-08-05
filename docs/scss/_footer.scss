@@ -7,7 +7,13 @@ footer{
         position: relative;
         color: $DarkRed;
         padding-bottom: 15px ;
-        img{
+        .arrow-down{
+            display: none;
+            position: absolute;
+            right: 0;
+        }
+        .arrow-up{
+            display: none;
             position: absolute;
             right: 0;
         }
@@ -37,7 +43,7 @@ footer{
         ul{
             float: left;
             li{
-                margin: 20px 30px 0 0 !important;
+                margin: 0 40px 0 0 ;
                 list-style: none;
                 float: right;
                 a{

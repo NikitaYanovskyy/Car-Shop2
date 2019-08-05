@@ -25,7 +25,13 @@ $DarkRed: #2b1111;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .hidden {
+    display: block;
+}
+.arrow-none{
     display: none !important;
+}
+.arrow-block{
+    display: block !important;
 }
 
 
@@ -41,10 +47,22 @@ $DarkRed: #2b1111;
 
 @media screen and (max-width: 425px){
     //Footer
+    .hidden {
+        display: none;
+    }
     .footer-wrapper{
         h4{
+            position: relative;
             border-bottom: 1px solid $DarkRed;
             padding: 15px 0;
+            .arrow-down{
+                top: 15px;
+                display: block;
+            }
+            .arrow-up{
+                top: 15px;
+                transform: rotate(180deg);
+            }
         }
         flex-direction: column;
         margin: 0 20px !important;
@@ -54,9 +72,9 @@ $DarkRed: #2b1111;
             margin-bottom: 0 !important;
             ul{
                 width: 100%;  
+                margin-right: auto;
                li{
-                   margin-top: 10px;
-                   margin-left: 20px;
+                margin: 20px 30px 0 20px !important;
                    list-style: none;
                    a{
                        text-decoration: none;
@@ -90,7 +108,11 @@ $DarkRed: #2b1111;
                         }  
                     }
                 }
-            }
+                li:nth-child(4){
+                    margin: 20px 15px 0 0;
+                }
+                }
+               
         }
     }
     //Popular Searches
