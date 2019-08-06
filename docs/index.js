@@ -135,3 +135,127 @@ if(window.matchMedia(`(max-width: 428px)`).matches){
     })
 }
 
+
+//Javascript advertisement
+
+const JSButtonOne = document.querySelector(`.javascript-select h5:nth-child(1)`);
+const JSButtonTwo = document.querySelector(`.javascript-select h5:nth-child(2)`);
+const JSButtonThree = document.querySelector(`.javascript-select h5:nth-child(3)`);
+
+const JSTextOne = document.querySelector(`.javascript-text p:nth-child(1)`);
+const JSTextTwo = document.querySelector(`.javascript-text p:nth-child(2)`);
+const JSTextThree = document.querySelector(`.javascript-text p:nth-child(3)`);
+
+// Spans
+const SpanArr = document.querySelectorAll(`.javascript-select h5 span`);
+
+//Images
+
+const JsImages = document.querySelectorAll(`.javascript-advertisment img`);
+
+JsImages[1].style.opacity = `0`;
+JsImages[2].style.opacity = `0`;
+JsImages.forEach(e=>{
+    e.style.transition = `all 0.3s ease-in-out`;
+})
+
+// opacity and left = 0
+JSTextOne.style.left = `0`;
+JSTextTwo.style.opacity = `0`;
+JSTextThree.style.opacity = `0`;
+SpanArr[0].style.width = `100%`;
+
+
+//Button events
+JSButtonOne.addEventListener(`click` , ()=>{
+
+//Image manipulation
+JsImages[0].style.opacity = `1`;
+JsImages[0].style.transform = `scale(1.1)`;
+JsImages[1].style.opacity = `0`;
+JsImages[1].style.transform = `scale(1)`;
+JsImages[2].style.opacity = `0`;
+JsImages[2].style.transform = `scale(1)`;
+
+//Buttons manipulation
+    JSTextOne.style.opacity = `1`;
+    JSTextOne.style.left = `0`;
+
+    JSTextTwo.style.opacity = `0`;
+    JSTextTwo.style.left = `30px`;
+
+    JSTextThree.style.opacity = `0`;
+    JSTextThree.style.left = `30px`;
+    setTimeout(()=>{
+    JSTextTwo.style.left = `-30px`;
+    JSTextThree.style.left = `-30px`;
+    }, 200)
+
+//Span manipulation
+    SpanArr.forEach(e=>{
+        e.style.width = '0';
+    })
+    JSButtonOne.childNodes[1].style.width = `100%`;
+})
+
+
+JSButtonTwo.addEventListener(`click` , ()=>{
+
+//Image manipulation
+JsImages[0].style.opacity = `0`;
+JsImages[0].style.transform = `scale(1)`;
+JsImages[1].style.opacity = `1`;
+JsImages[1].style.transform = `scale(1.1)`;
+JsImages[2].style.opacity = `0`;
+JsImages[2].style.transform = `scale(1)`;
+
+//Buttons manipulation
+    JSTextTwo.style.opacity = `1`;
+    JSTextTwo.style.left = `0`;
+
+    JSTextOne.style.opacity = `0`;
+    JSTextOne.style.left = `30px`;
+
+    JSTextThree.style.opacity = `0`;
+    JSTextThree.style.left = `30px`;
+    setTimeout(()=>{
+    JSTextOne.style.left = `-30px`;
+    JSTextThree.style.left = `-30px`;
+    }, 200)
+
+//Span manipulation
+    SpanArr.forEach(e=>{
+        e.style.width = '0';
+    })
+    JSButtonTwo.childNodes[1].style.width = `100%`;
+})
+JSButtonThree.addEventListener(`click` , ()=>{
+
+//Image manipulation
+     JsImages[0].style.opacity = `0`;
+     JsImages[0].style.transform = `scale(1)`;
+     JsImages[1].style.opacity = `0`;
+     JsImages[1].style.transform = `scale(1)`;
+     JsImages[2].style.opacity = `1`;
+     JsImages[2].style.transform = `scale(1.1)`;
+
+//Buttons manipulation
+    JSTextThree.style.opacity = `1`;
+    JSTextThree.style.left = `0`;
+
+    JSTextTwo.style.opacity = `0`;
+    JSTextTwo.style.left = `30px`;
+
+    JSTextOne.style.opacity = `0`;
+    JSTextOne.style.left = `30px`;
+    setTimeout(()=>{
+    JSTextOne.style.left = `-30px`;
+    JSTextTwo.style.left = `-30px`;
+    }, 200)
+
+//Span manipulation
+    SpanArr.forEach(e=>{
+        e.style.width = '0';
+    })
+    JSButtonThree.childNodes[1].style.width = `100%`;
+})

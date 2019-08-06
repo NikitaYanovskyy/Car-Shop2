@@ -753,14 +753,11 @@ select {
 }
 
 .png-side-wrapper {
+  margin-top: 50px;
   padding: 0 25px;
   width: 60%;
   float: right;
   margin-right: 60px;
-}
-
-.png-side-wrapper img {
-  margin-top: 40px;
 }
 
 .grid-side {
@@ -1043,18 +1040,182 @@ select {
 }
 
 .new-cars-reveals .new-cars-flex2 .new-cars-flex {
-  width: 70%;
+  width: 65%;
 }
 
 .new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper {
-  width: 30%;
+  width: 300px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment {
-  margin: 50px auto 0 auto;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 50px 0 0 auto;
   height: 100%;
-  width: 80%;
-  background-color: #000;
+  width: 300px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#000), to(transparent));
+  background: linear-gradient(to top, #000, transparent);
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .js-img1 {
+  z-index: -1;
+  width: 500%;
+  height: 200%;
+  position: absolute;
+  top: -50%;
+  left: -150%;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .js-img2 {
+  z-index: -1;
+  width: 500%;
+  height: 200%;
+  position: absolute;
+  top: -100%;
+  left: -150%;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .js-img3 {
+  z-index: -1;
+  width: 500%;
+  height: 200%;
+  position: absolute;
+  top: -115%;
+  left: -150%;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .javascript-lower-buttons {
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .javascript-lower-buttons .build {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #2b1111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  border-right: 1px solid #000;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .javascript-lower-buttons .build:hover {
+  background-color: lightcoral;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .javascript-lower-buttons .search {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #2b1111;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .javascript-lower-buttons .search:hover {
+  background-color: lightcoral;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .javascript-lower-buttons a {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .javascript-inner-wrapper {
+  text-align: center;
+  margin: 30px 30px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .javascript-inner-wrapper h1 {
+  color: #2b1111;
+  margin: 20px 0 180px 0;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .javascript-inner-wrapper .javascript-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .javascript-inner-wrapper .javascript-select h5 {
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin: 20px 5px;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .javascript-inner-wrapper .javascript-select h5 span {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  display: block;
+  width: 0;
+  margin: 0 auto;
+  height: 2px;
+  background-color: #fff;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .javascript-inner-wrapper .javascript-select h5:hover {
+  color: #fff9;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .javascript-inner-wrapper .javascript-text {
+  position: relative;
+  width: 100%;
+  height: 80px;
+}
+
+.new-cars-reveals .new-cars-flex2 .javascript-advertisment-wrapper .javascript-advertisment .javascript-inner-wrapper .javascript-text p {
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  display: block;
+  left: -30px;
 }
 
 .popular-searches {
@@ -1222,6 +1383,10 @@ footer {
   color: #fff;
 }
 
+.under-footer-wrapper .copyright {
+  margin-right: 20px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -1318,16 +1483,27 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 130px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .under-footer-wrapper .privacy ul {
+    -webkit-column-count: 1;
+            column-count: 1;
+    height: 100%;
   }
   .under-footer-wrapper .privacy ul li {
-    list-style: none;
-    float: right;
-    margin: 0 20px;
-    margin-top: 30px !important;
+    margin: 20px 20px 0 20px;
+    width: 100%;
+    float: left;
   }
   .under-footer-wrapper .copyright p {
+    margin: 20px 0 20px 20px;
     margin-bottom: 20px;
+    margin-left: 20px;
   }
   .popular-searches ul {
     -webkit-column-count: 1 !important;
@@ -1530,6 +1706,7 @@ footer {
     display: none;
   }
   .png-side .png-side-wrapper {
+    margin-top: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
